@@ -1,5 +1,9 @@
 .wrapper {
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 100vh;
+    align-content: space-between;
 }
 
 .wrapper > * {
@@ -9,28 +13,38 @@
 .header {
     background: rgb(240,100,73);
     background: linear-gradient(135deg, rgba(240,100,73,1) 0%,rgba(239,60,28,1) 100%);
+    flex-basis: 100%;
+    order: 1;
+    height: 50px;
 }
 
 .main {
     background: rgb(237,230,227);
     background: linear-gradient(135deg, rgba(237,230,227,1) 0%,rgba(234,201,187,1) 100%);
+    flex: 4 1 1px;
+    order: 3;
 }
 
 .aside {
-
+    flex-grow: 1;
 }
 
 .aside-1 {
     background: rgb(218,218,217);
     background: linear-gradient(135deg, rgba(218,218,217,1) 0%,rgba(216,216,184,1) 100%);
+    order: 2;
 }
 
 .aside-2 {
     background: rgb(54,56,46);
     background: linear-gradient(135deg, rgba(54,56,46,1) 0%,rgba(50,53,40,1) 100%);
+    order: 4;
 }
 
 .footer {
     background: rgb(91,195,235);
     background: linear-gradient(135deg, rgba(91,195,235,1) 0%,rgba(39,182,234,1) 100%);
+    flex-basis: 100%;
+    order: 5;
+    height: 50px;
 }
